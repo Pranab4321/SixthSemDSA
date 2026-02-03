@@ -1,0 +1,20 @@
+// find the volume of cone
+//V = 1/3(pi*r*r*h)
+
+import java.util.Scanner;
+class zHomeWork2a{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        int r = sc.nextInt();
+        System.out.print("Enter height: ");
+        int h = sc.nextInt();
+
+        double pi = 3.14;
+
+        double volume = (1.0/3)*pi*r*r*h;
+
+        System.out.printf("The volume of cone is: %2f",volume);
+
+    }
+}
