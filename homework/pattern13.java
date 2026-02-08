@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-class pattern13while{
+class pattern13{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
         int n = sc.nextInt();
-        int star = n;
-        int space = 0;
-        int row = 1;
+        
+        int row=1;
+        int star=n;
+        int space=0;
 
         while(row<=n){
             int i=1;
@@ -25,11 +25,11 @@ class pattern13while{
                 System.out.print("* ");
                 k++;
             }
-           
+            
             System.out.println();
             star--;
-            space=space+2;
             row++;
+            space=space+2;
         }
         sc.close();
     }
