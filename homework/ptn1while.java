@@ -1,36 +1,42 @@
+//       1 
+//     2 3 2 
+//   3 4 5 4 3
+// 4 5 6 7 6 5 4
+
 import java.util.Scanner;
 
 class ptn1while{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int n= sc.nextInt();
+        int n = sc.nextInt();
+
         int row = 1;
-        int space =n-1;
+        int space = n-1;
         int star = 1;
 
         while(row<=n){
-            int i=1;
+            int i = 1;
             while(i<=space){
                 System.out.print("  ");
                 i++;
             }
-
-            int j=row;
+            int l=row;
+            int j=1;
             while(j<=star){
-                System.out.print(j+" ");
-                j++;
-            }
+                
+                System.out.print(l+" ");
 
-            int k=star-1;
-            while(k>=row){
-                System.out.print(k+" ");
-                k--;
+                if(j<=star/2){
+                    l++;
+                }else{
+                    l--;
+                }
+                j++;    
             }
-
             System.out.println();
             row++;
-            star=star+2;
             space--;
+            star+=2;
         }
     }
 }
