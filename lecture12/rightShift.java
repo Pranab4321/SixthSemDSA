@@ -1,34 +1,28 @@
 import java.util.Scanner;
 
 class rightShift{
-    public static void rightshift(int [] arr){
-        int i = arr.length-1;
-        int j = i-1;
-        while(i>0){
-            int a = arr[i];
-            int b = arr[j];
-
-            arr[i]=b;
-            arr[j]=a;
-            i--;
-            j--;
-        }
-
-        for(int d=0; d<arr.length; d++){
-            System.out.print(arr[d]+" ");
-        }
-    }
-
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-
-        int[] arr = new int[5];
-
-        for(int i=0;i<arr.length;i++){
-            arr[i]=sc.nextInt();
+        int n = 5;
+        int [] arr = new int[n];
+        for(int i=0; i<arr.length; i++){
+            arr[i] = sc.nextInt();
         }
+        shiftToRight(arr);
+        sc.close();
+    }
 
-        rightshift(arr);
+    public static void shiftToRight(int[] arr){
         
+        for(int i=arr.length-1; i>0; i--){
+            int j=i-1;
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        System.out.print("Right Shift: ");
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+" ");
+        }        
     }
 }
