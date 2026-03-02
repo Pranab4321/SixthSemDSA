@@ -1,3 +1,6 @@
+// here the pivot index number will be the number which is greater than 
+// both the before and after number
+
 import java.util.Scanner;
 
 class pivotIndex{
