@@ -1,6 +1,6 @@
 
 import java.util.Scanner;
-public class Lec_21_1 {
+class Lec_21_1 {
     public static void arraySum(){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

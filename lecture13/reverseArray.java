@@ -23,12 +23,19 @@ class reverseArray{
 
     public static void reverse(int [] arr,int s, int l){
 
-        for(int i=s; i<l; i++){
-            int temp = arr[i];
-            arr[i] = arr[l-1];
-            arr[l-1] = temp;
+        // for(int i=s; i<l; i++){
+        //     int temp = arr[i];
+        //     arr[i] = arr[l-1];
+        //     arr[l-1] = temp;
+        //     l--;
+        // }
+
+        while(s<l-1){
+            int t = arr[s];
+            arr[s] = arr[l-1];
+            arr[l-1] = t;
+            s++;
             l--;
         }
-
     }
 }
