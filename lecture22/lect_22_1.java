@@ -1,5 +1,5 @@
 
-public class lec_22_1 {
+public class lect_22_1 {
     public static void countFrequency(){
         int arr[] = {1, 2, 2, 3, 3, 3, 4, 4,};
         int max = arr[0];

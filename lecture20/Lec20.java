@@ -1,4 +1,4 @@
-public class Lec_20 {
+public class Lec20 {
     // leetcode question - 
     // 278 - First Bad Version,
     // 75 - Sort Colors(Insertion, Selection, Bubble),

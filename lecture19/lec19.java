@@ -1,5 +1,5 @@
 
-public class lec_19 {
+public class lec19 {
     // leetcode question - 
     // 628 - Maximum Product of Three Numbers, 
     // 219 - Contains Duplicate II,
